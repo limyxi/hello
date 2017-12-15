@@ -1,0 +1,37 @@
+1.widget是最外层的一个空的容器
+widget:layout window UIModule
+2.layout是一种特定的布局效果，
+通过定义好的布局来组织一组window或frame来完成整体的页面布局效果
+3.window是一个独立的native窗口，宽高占满屏幕。
+window内部可以包含layout frame uiModule
+4.frame是一个独立的native视图
+位置宽高可通过参数配置
+5.UIModule十一组Native的试图组成，可以使全屏展示也可以只填充指定的区域
+每个UI模块都具有自己独立的生命周期、界面布局、事件管理和数据交换。
+UI模块通常需要嵌入到Window或Frame中使用
+
+
+浏览器的页面渲染机制:（单层渲染）
+html(tag)->dom(element)->layout(css)->render->draw
+
+APICloud混合渲染机制：（多个组件单独进行渲染）
+支持native+h5的混合渲染
+
+数据接口定义：
+APICloud应用架构是Client+Cloud架构，终端实现UI布局和功能
+云端提供数据和服务，来发APICloud应用
+
+
+APICloud提供了从客户端到云端的完整的方案
+云端提供数据管理功能
+客户端提供数据访问API
+
+推送 更新 统计
+
+API提供的应用功能
+
+版本更新
+
+
+
+

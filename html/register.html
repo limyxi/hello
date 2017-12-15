@@ -47,9 +47,8 @@
 </head>
 <body>
 	<header>
-		<h1>每日优鲜</h1>
-		<div class="left" tapmode onclick="fnOpenCitySelectFrame()">选择城市</div>
-		<div class="right" tapmode onclick="fnOpenPersonCenterWin()">个人中心</div>
+		<h1>注册</h1>
+		<div class="left" tapmode onclick="api.closeWin()">返回</div>
 	</header>
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
@@ -60,29 +59,6 @@
     	api.openWin({
     	    name: 'login',
     	    url: './login.html',
-    	    pageParam: {
-    	        name: 'test'
-    	    }
-    	});
-    }
-    function fnOpenCitySelectFrame(){
-    	// api.openFrame({
-    	//     name: 'cityselect_frame',
-    	//     url: './cityselect_frame.html',
-    	//     rect: {
-    	//         x: 0,
-    	//         y: 50,
-    	//         w: 'auto',
-    	//         h: 'auto'
-    	//     },
-    	//     pageParam: {
-    	//         name: 'value'
-    	//     },
-    	//     bounces: true
-    	// });
-    	api.openWin({
-    	    name: 'database',
-    	    url: './database.html',
     	    pageParam: {
     	        name: 'test'
     	    }
